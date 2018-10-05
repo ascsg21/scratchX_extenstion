@@ -9,14 +9,14 @@
     };
 
     ext.getImageDescription = function(imgPath) {
-        return ''
+        return imgPath
     };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             // Block type, block name, function name, param1 default value, param2 default value
-            ['r', '%s', 'getImageDescription', ''],
+            ['r', 'aaa %s  bb', 'getImageDescription', ''],
         ],
         displayName: 'google Vision API Block'
     };
