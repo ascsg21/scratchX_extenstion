@@ -1,3 +1,31 @@
+
+
+var str ='';
+
+function googleVisionAPI(imgPath) {
+  // Imports the Google Cloud client library
+  const vision = require('@google-cloud/vision');
+
+  // Creates a client
+  const client = new vision.ImageAnnotatorClient();
+
+  // Performs label detection on the image file
+  client
+    .labelDetection(imgPath)
+    .then(results => {
+      const labels = results[0].labelAnnotations;
+
+      for(var i=0; i < labels.length; i++) {
+        str = str + ', ' + label.description;
+      }
+
+      return str;
+    })
+    .catch(err => {
+      console.error('ERROR:', err);
+    });
+}
+
 (function(ext) {
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
@@ -9,7 +37,8 @@
     };
 
     ext.getImageDescription = function(imgPath) {
-        return imgPath
+      googleVisionAPI(imgPath);
+      return str;
     };
 
     // Block and block menu descriptions

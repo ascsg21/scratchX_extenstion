@@ -1,0 +1,26 @@
+{
+  "name": "extension_test",
+  "version": "1.0.0",
+  "description": "google cloud Vision API sample",
+  "main": "scratchX_test.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^0.22.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ascsg21/scratchX_extenstion.git"
+  },
+  "author": "MinRiDaddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ascsg21/scratchX_extenstion/issues"
+  },
+  "homepage": "https://github.com/ascsg21/scratchX_extenstion#readme"
+}
