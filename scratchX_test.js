@@ -16,7 +16,7 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name, param1 default value, param2 default value
-            ['r', 'aaa %s  bb', 'getImageDescription', ''],
+            ['r', 'image path : %s', 'getImageDescription', ''],
         ],
         displayName: 'google Vision API Block'
     };
